@@ -1,0 +1,21 @@
+[package]
+name = "pdfdiff"
+version = "0.1.0"
+edition = "2024"
+description = "A PDF diffing tool for research papers and more."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/pixelsandpointers/pdfdiff"
+readme = "readme.md"
+keywords = ["latex", "pdf", "diff", "tex", "latexdiff"]
+categories = ["command-line-utilities"]
+
+[[bin]]
+name = "pdfdiff"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+tempfile = "3"
+walkdir = "2"
+which = "7"
